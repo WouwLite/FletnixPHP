@@ -1,0 +1,67 @@
+/* Add global values to the footer-tag (in class selector) */
+.footer {
+    background: #212121;
+    height: 100%;
+    min-height: 240px;
+    color: #FFF;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Flexbox specific values */
+.footer-service {
+    max-width: 250px;
+    flex: 1;
+    display: inline;
+    text-align: left;
+    justify-content: flex-end;
+}
+
+.footer-account {
+    max-width: 250px;
+    flex: 2;
+    display: inline;
+    text-align: left;
+    justify-content: flex-end;
+}
+
+.footer-business {
+    max-width: 250px;
+    flex: 3;
+    display: inline;
+    text-align: left;
+    justify-content: flex-end;
+}
+
+.copyright {
+    text-align: center;
+    width: 100%;
+    background-color: #212121;
+    color: #FFF;
+    flex-grow: 1;
+}
+
+/* Added styling for unordered-list items within the footer area */
+.footer ul {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/* Remove default A styling */
+.footer ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Add underline with hover over link */
+.footer ul li a:hover {
+    text-decoration: underline;
+}

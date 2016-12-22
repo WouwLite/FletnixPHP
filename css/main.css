@@ -1,0 +1,99 @@
+/*-----------------------*/
+/* Define the body style */
+/*-----------------------*/
+
+/* Add global values to the body-tag */
+body {
+    background-color: #263238;
+    color: #222;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+/* Set fallback colour on footer-tag */
+footer {
+    color: #FFF;
+}
+
+/*---------*/
+/* Flexbox */
+/*---------*/
+.container {
+    height: 100%;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    box-orient: horizontal;
+}
+
+/* Define the vertical navbar-container with Flexbox */
+.nav {
+    background: #2c3e50;
+    color: #FFF;
+    width: 15%;
+    min-width: 180px;
+    min-height: 600px;
+    box-flex: 0;
+}
+
+/* Define the main-container with Flexbox */
+.main {
+    background: #263238;
+    color: #FFF;
+    width: 85%;
+    min-height: 600px;
+    box-flex: 1;
+}
+
+.main form {
+    width: 350px;
+}
+
+/* Define the medica-container within the main-container with Flexbox */
+.media {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+/* Add style to the list-items from the UL */
+.media li {
+    list-style-type: none;
+    flex: 1;
+    text-align: center;
+}
+
+/* Add grey overlay on hover */
+.media li:hover .overlay {
+    opacity: 0.5;
+    transition-delay: 0.15s;
+}
+
+/* Fix width/height on each image within the media tag */
+.placeholder {
+    width: 140px;
+    height: 200px;
+}
+
+/*----------------*/
+/* Generic Margin */
+/*----------------*/
+
+/* Add a margin from left with 15 pixels */
+/* No percentage was used due to styling */
+.margin15 {
+    margin-left: 15px;
+}
+
+.movie-wallpaper {
+    max-height: 400px;
+    max-width: 600px;
+    margin: 15px;
+    opacity: 0.8;
+}

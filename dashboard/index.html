@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Fletnix</title>
+    <meta name="description" content="Fletnix Video-on-Demand">
+    <meta name="author" content="Jordy & Joel BV">
+
+    <link type="text/css" rel="stylesheet" href="../css/main.css">
+    <link type="text/css" rel="stylesheet" href="../css/nav.css">
+    <link type="text/css" rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+<nav>
+    <!-- Change the deep-links for each nested page-block -->
+    <ul>
+        <li class="logo"><h1>Fletnix</h1></li>
+        <li><a href="../dashboard/index.html"><strong>Dashboard</strong></a></li>
+        <li><a href="../paywall.html">Abonnementen</a></li>
+        <li><a href="../dashboard/films.html">Films</a></li>
+        <li><a href="../dashboard/series.html">Series</a></li>
+    </ul>
+</nav>
+
+<!-- The vertical nav contains search bar, populair films, latest releases, etc.  -->
+<div class="container">
+    <div class="nav vertnav">
+        <div class="search">
+            <form>
+                <input type="text" id="search" name="Search" placeholder="Zoeken naar..."/>
+                <input type="submit" value="Gaan"/>
+            </form>
+        </div>
+        <ul>
+            <li><a href="../dashboard/just-released.html">Net uitgebracht</a></li>
+            <li><a href="../index.html">Populair</a></li>
+            <li><a href="../dashboard/expected.html">Verwacht</a></li>
+            <li><a href="../dashboard/favorites.html">Favorieten</a></li>
+            <li><a href="../dashboard/staff-picks.html">Staff Picks</a></li>
+        </ul>
+    </div>
+    <div class="main margin15">
+        <!-- Specific HTML pages -->
+        <!-- Insert data below this line -->
+        <h1>Dashboard</h1>
+        <p>Welkom op het dashboard!</p>
+        <p>Om films en series te kunnen bekijken dient u aangemeld te zijn.</p>
+        <p>Hier ziet u, afhankelijk of u bent aangemeld of niet, uw account overzicht en welke gegevens er bij ons bekend zijn.</p>
+        <p>In de toekomst zal u ook uw favorieten kunen opslaan en terug kunnen zien in het dashboard.</p>
+
+        <!--When PHP is ready, we can implement a check - if user is not logged in, show login field. If user is logged in, show account field-->
+        <form>
+            <fieldset>
+                <legend>Log-in</legend>
+                <p>Dit scherm wordt automatisch zichtbaar wanneer u nog niet ingelogd bent</p>
+                <br>
+                <label>Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="peter.stieltjes@fletnix.nl"><br>
+                <label>Wachtwoord:</label><br>
+                <input type="password" id="password" name="password" placeholder="ditisgeenloremipsum">
+                <br><br>
+                <input type="submit" value="Aanmelden">
+            </fieldset>
+        </form>
+        <br><br>
+        <form>
+            <fieldset>
+                <legend>Account Overzicht</legend>
+                <p>Hier ziet u de informatie die bij ons bekend is.</p>
+                <p>Deze informatie kunt u momenteel niet zelfstandig aanpassen. Neem contact op met de servicedesk.</p>
+                <br>
+                <label>Voornaam:</label><br>
+                <input type="text" disabled placeholder="Peter">
+                <label>Achternaam:</label><br>
+                <input type="text" disabled placeholder="Stieltjes">
+                <label>Geboortedatum:</label><br>
+                <input type="text" disabled placeholder="23-02-1990">
+                <label>Email:</label><br>
+                <input type="text" disabled placeholder="peter.stieltjes@fletnix.nl">
+            </fieldset>
+            <fieldset>
+                <legend>Betaalinformatie</legend>
+                <label>IBAN nummer:</label><br>
+                <input type="text" disabled placeholder="NL01 KNAB 0000 0000 00">
+                <label>Automatische incasso actief:</label><br>
+                <input type="text" disabled placeholder="Ja">
+            </fieldset>
+        </form>
+        <br><br>
+        <!-- Insert data above this line  images/movies/ted/Ted.jpg -->
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="footer">
+            <!-- Items that are commented are a feature when the Fletnix webapp is about to be released. Certain legal items are required before official release. -->
+            <div class="footer-service margin15">
+                <ul>
+                    <li><h2>Klantenservice</h2></li>
+                    <li><a href="service/faq.html">Veelgestelde vragen</a></li>
+                    <!--<li><a href=../ervice/payments.html">Betaling</a></li>-->
+                    <!--<li><a href=../ompany/legal/privacy.html">Privacy</a></li>-->
+                    <!--<li><a href=../ervice/speedtest.html">Speedtest</a></li>-->
+                    <!--<li><a href=../ompany/legal/terms.html">Algemene Voorwaarden</a></li>-->
+                </ul>
+            </div>
+            <div class="footer-account margin15">
+                <ul>
+                    <li><h2>Account</h2></li>
+                    <li><a href="../dashboard/">Dashboard</a></li>
+                    <li><a href="../dashboard/create-account.html">Account aanmaken</a></li>
+                    <!--<li><a href=../ashboard/financial.html">Financieel Dashboard</a></li>-->
+                    <!--<li><a href=../ashboard/remove-account.html">Account verwijderen</a></li>-->
+                </ul>
+            </div>
+            <div class="footer-business margin15">
+                <ul>
+                    <li><h2>Bedrijf</h2></li>
+                    <li><a href="../company/about.html">Over ons</a></li>
+                    <!--<li><a href=../ompany/blog.html">Blog</a></li>-->
+                    <li><a href="../company/contact.html">Contact</a></li>
+                    <!--<li><a href=../ompany/jobs.html">Werken bij Fletnix</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container copyright">
+        <p>© 2016 Fletnix | Alle rechten voorbehouden</p>
+    </div>
+</footer>
+</body>
+</html>

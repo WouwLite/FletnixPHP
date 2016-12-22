@@ -1,0 +1,9 @@
+# Add rule to block al index requests. Otherwise subfolders could be indexed by user.
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+Options -Indexes
+
+# Rewrite URL to remove index.php from the address bar
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php?/$1 [L]

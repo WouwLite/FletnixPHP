@@ -1,0 +1,113 @@
+/*---------------------------*/
+/* Horizontal Navigation Bar */
+/*---------------------------*/
+
+/* Define the navbar style */
+/* Create navbar main background */
+nav {
+    background-color: #e74c3c;
+    color: #FFF;
+    padding: 0;
+    text-align: left;
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    font-size: 18px;
+    margin-left: 0%;
+}
+
+/* Remove UL bullets horizontal navbar */
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    padding-left: 0px;
+}
+
+.logo {
+    width: 15%;
+    margin-left: 5px;
+    padding: 0px;
+    text-align: center;
+}
+
+/* Place the items horizontally */
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/* Unordered List Stylesheet */
+nav ul li a {
+    color: #ecf0f1;
+    background-color: #e74c3c;
+    display: flex;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #c0392b;
+    color: #ecf0f1;
+}
+
+/*-------------------------*/
+/* Vertical Navigation Bar */
+/*-------------------------*/
+
+/* Remove UL bullets vertical navbar */
+.vertnav ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 18px;
+}
+
+.vertnav ul li {
+    display: block;
+    list-style-type: none;
+    transition: all 0.2s;
+}
+
+.vertnav ul li a {
+    color: #ecf0f1;
+    display: flex;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+
+.vertnav ul li:hover {
+    background-color: #263238;
+    color: #00FF00;
+}
+
+.account {
+    background-color: #424242;
+}
+
+.vertnav ul .active {
+    background-color: #263238;
+}
+
+.search {
+    padding: 15px;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 5px, auto, 0.5em, auto;
+}
+
+input[type=text] {
+    width: 98%;
+    font-size: 22px;
+    padding: 0.5em, auto, 0.5em, auto;
+}
