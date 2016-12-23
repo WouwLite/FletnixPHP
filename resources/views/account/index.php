@@ -1,1 +1,0 @@
-// account overview, management, quick links, favourites, etc.
