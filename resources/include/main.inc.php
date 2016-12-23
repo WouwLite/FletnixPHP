@@ -1,4 +1,3 @@
-<?php require '../../config/app.php'; ?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -22,7 +21,7 @@
 <nav>
     <!-- Change the deep-links for each nested page-block -->
     <ul>
-        <li class="logo"><h1><?php echo $title ?></h1></li>
+        <li class="logo"><h1>Fletnix</h1></li>
         <li><a href="dashboard/index.html"><strong>Dashboard</strong></a></li>
         <li><a href="paywall.html">Abonnementen</a></li>
         <li><a href="dashboard/films.html">Films</a></li>

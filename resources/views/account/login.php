@@ -4,9 +4,36 @@
  * /resources/views/account/login.php
  */
 
+session_start();
+
+if (isset($_SESSION['user_id'])) {
+    header("Location: home.php");
+}
+
+// Include database info
+require '../../../config/database.php';
+
+// Default status messages
+$status = '';
+$message = '';
+$fail = 'Oops! Er is een fout opgetreden. Probeer opnieuw.';
+
+// Course
 if (!empty($_POST['email']) && !empty($_POST['password'])):
-    echo $_POST['email'];
-    die();
+
+    $records = $connection->prepare('SELECT id,email,password FROM users WHERE email = :email');
+    $records->bindParam(':email', $_POST['email']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+
+    if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
+        $_SESSION['user_id'] = $results['id'];
+        header("Location: home.php");
+    } else {
+        $message = $fail;
+        $status = false;
+    }
+
 endif;
 
 ?>
@@ -25,16 +52,20 @@ endif;
 </head>
 <body>
 
-<div class="header">
-    <a href="home.php">Fletnix Members-Only</a>
-</div>
+    <div class="header">
+        <a href="home.php">Fletnix Members-Only</a>
+    </div>
+
+    <?php if ($status = true && (!empty($message))): ?>
+        <p class="message-fail"><?= $message ?></p>
+    <?php endif; ?>
 
     <h1>Aanmelden</h1>
     <span>of <a href="register.php">registreer</a> een nieuw account</span>
 
     <form action="login.php" method="POST">
-        <input type="text" placeholder="Voer uw email in" name="email">
-        <input type="password" placeholder="Voer uw wachtwoord in" name="password">
+        <input type="email" placeholder="Voer uw email in" name="email" required autofocus>
+        <input type="password" placeholder="Voer uw wachtwoord in" name="password" required>
         <input type="submit">
     </form>
 

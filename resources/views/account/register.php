@@ -7,9 +7,17 @@
 // Include database info
 require '../../../config/database.php';
 
-// Add message containing null data
-// Otherwise there may be script issues along the way
+session_start();
+
+if (isset($_SESSION['user_id'])) {
+    header("Location: home.php");
+}
+
+// Default status messages
+$status = false;
 $message = '';
+$success = 'Uw account is aangemaakt!';
+$fail = 'Oh jee! Er is een fout opgetreden! Controleer uw info en probeer het overnieuw.';
 
 // Check if both email and password are not empty
 if (!empty($_POST['email']) && !empty($_POST['password'])):
@@ -25,9 +33,11 @@ if (!empty($_POST['email']) && !empty($_POST['password'])):
     // If statement is executed, return message Successful
     // Else, return message Fail (this would normally not happen, it's just an extra precaution
     if ($statement->execute()):
-        $message = 'Uw account is aangemaakt!';
+        $message = $success;
+        $status = true;
     else:
-        $message = 'Oh jee! Er is een fout opgetreden! Controleer uw info en probeer het overnieuw.';
+        $message = $fail;
+        $status = false;
     endif;
 
 endif;
@@ -52,18 +62,20 @@ endif;
         <a href="home.php">Fletnix Members-Only</a>
     </div>
 
-
-        <?php if (!empty($message)): ?>
-            <p class="message"><?= $message ?></p>
+        <?php if ($status = true && (!empty($message))): ?>
+        <p class="message-success"><?= $message ?></p>
+        <?php endif; ?>
+        <?php if ($status = false && (!empty($message))): ?>
+        <p class="message-fail"><?= $message ?></p>
         <?php endif; ?>
 
     <h1>Registreren</h1>
     <span>of <a href="login.php">meld u aan</a></span>
 
     <form action="register.php" method="POST">
-        <input type="text" placeholder="Voer uw email in" name="email">
-        <input type="password" placeholder="Voer uw wachtwoord in" name="password">
-        <input type="password" placeholder="Bevestig uw wachtwoord" name="confirm_password">
+        <input type="email" placeholder="Voer uw email in" name="email" required autofocus>
+        <input type="password" placeholder="Voer uw wachtwoord in" name="password" required>
+        <input type="password" placeholder="Bevestig uw wachtwoord" name="confirm_password" required>
         <input type="submit">
     </form>
 

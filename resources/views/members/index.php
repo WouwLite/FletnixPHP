@@ -4,14 +4,8 @@
 require '../../../config/app.php';
 include '../../../resources/include/main.inc.php';
 ?>
-
+<html>
 <h1>Let's find out what keeps failing...</h1>
-<?php
-    echo $relpath;
-    echo ' VS ';
-    echo $abspath;
-    echo ' VS ';
-    echo $_SERVER["DOCUMENT_ROOT"];
-?>
+</html>
 
 <?php include '../../../resources/include/footer.inc.php'; ?>
