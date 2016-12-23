@@ -4,6 +4,13 @@
  * config/database.php
  */
 
-/*
- * q3237mCQVJyQY6K25zdGUCPy
- */
+$server = 'localhost';
+$username = 'root';
+$password = 'root';
+$database = 'fletnix_db';
+
+try{
+    $connection = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
+} catch(PDOException $e) {
+    die ( "Connection failed!" . $e->getMessage());
+}

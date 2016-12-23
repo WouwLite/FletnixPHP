@@ -4,9 +4,31 @@
  * /resources/views/account/register.php
  */
 
+// Include database info
+require '../../../config/database.php';
+
+// Add message containing null data
+// Otherwise there may be script issues along the way
+$message = '';
+
+// Check if both email and password are not empty
 if (!empty($_POST['email']) && !empty($_POST['password'])):
 
-    
+    // Add new user to database via POST
+    //:email and :password are to prevent SQL injections
+    $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
+    $statement = $connection->prepare($sql);
+    $statement->bindParam(':email', $_POST['email']);
+    $statement->bindParam(':password', password_hash($_POST['password'], PASSWORD_BCRYPT));
+
+    // Once both email and password are entered, execute command
+    // If statement is executed, return message Successful
+    // Else, return message Fail (this would normally not happen, it's just an extra precaution
+    if ($statement->execute()):
+        $message = 'Uw account is aangemaakt!';
+    else:
+        $message = 'Oh jee! Er is een fout opgetreden! Controleer uw info en probeer het overnieuw.';
+    endif;
 
 endif;
 
@@ -29,6 +51,11 @@ endif;
     <div class="header">
         <a href="home.php">Fletnix Members-Only</a>
     </div>
+
+
+        <?php if (!empty($message)): ?>
+            <p class="message"><?= $message ?></p>
+        <?php endif; ?>
 
     <h1>Registreren</h1>
     <span>of <a href="login.php">meld u aan</a></span>

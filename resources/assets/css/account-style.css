@@ -45,3 +45,12 @@ input[type="submit"]:hover {
     text-decoration: none;
     font-size: 2em;
 }
+
+.message {
+    background: #c0392b;
+    align-items: center;
+    border-bottom: 1px solid #95a5a6;
+    padding: 10px 0px;
+    width: 20%;
+    text-align: center;
+}
