@@ -24,9 +24,10 @@ if (!empty($_POST['email']) && !empty($_POST['password'])):
 
     // Add new user to database via POST
     //:email and :password are to prevent SQL injections
-    $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
+    $sql = "INSERT INTO users (email, password, firstname) VALUES (:email, :password, :firstname)";
     $statement = $connection->prepare($sql);
     $statement->bindParam(':email', $_POST['email']);
+    $statement->bindParam(':firstname', $_POST['firstname']);
     $statement->bindParam(':password', password_hash($_POST['password'], PASSWORD_BCRYPT));
 
     // Once both email and password are entered, execute command
@@ -71,12 +72,26 @@ endif;
 
     <h1>Registreren</h1>
     <span>of <a href="login.php">meld u aan</a></span>
+    <br>
 
     <form action="register.php" method="POST">
-        <input type="email" placeholder="Voer uw email in" name="email" required autofocus>
-        <input type="password" placeholder="Voer uw wachtwoord in" name="password" required>
-        <input type="password" placeholder="Bevestig uw wachtwoord" name="confirm_password" required>
-        <input type="submit">
+        <h1>Nieuw account</h1>
+<!--            Firstname pattern: Capital Letters, Small Letters, Use of dashes, Use of spaces, minimal 2 - max 32 chars-->
+            <input type="text" pattern="[A-Za-zÀ-ž\-\s]{2,32}" placeholder="Voer uw voornaam in" name="firstname" title="Voer uw naam in zonder special tekens, bijv: John, Jan-Pieter" required autofocus>
+            <input type="date" placeholder="Wat is uw geboortedatum" name="birthday">
+            <input type="text" pattern="[A-Za-zÀ-ž\-\s]{2,150}" placeholder="Voer uw achternaam in" name="lastname">
+            <input type="email" placeholder="Voer uw email in" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Voer een legitiem emailadres in, bijv: john@doe.com" required>
+            <input type="password" placeholder="Voer uw wachtwoord in" name="password" title="Maak een sterk wachtwoord! " required>
+            <input type="password" placeholder="Bevestig uw wachtwoord" name="confirm_password" required>
+<!--        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"-->
+
+        <h1>SEPA machtiging</h1>
+            <input type="text" placeholder="Voer uw IBAN nummer in" name="iban">
+            <input type="text" placeholder="Voer uw BIC code in" name="bic">
+            <p>Gaat u akkoord met automatische incasso middels <a href="#">SEPA</a>?</p>
+            <input type="radio" value="Ja" name="sepa-approved" checked>Ja
+            <input type="radio" value="Nee" name="sepa-approved">Nee<br><br>
+            <input type="submit" value="Account aanmaken">
     </form>
 
 </body>

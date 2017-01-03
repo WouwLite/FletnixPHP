@@ -1,3 +1,5 @@
+/* Temporary body style */
+/* Once converted to theme, this could function as back-up if the theme css fails */
 body {
     background: #ecf0f1;
     font-family: 'Raleway', sans-serif;
@@ -6,7 +8,8 @@ body {
     text-align: center;
 }
 
-input[type="text"], input[type="password"], input[type="email"] {
+/* CSS Form Styling */
+input[type="text"], input[type="email"], input[type="date"] {
     /*outline: none;*/
     padding: 10px;
     display: block;
@@ -33,6 +36,25 @@ input[type="submit"]:hover {
     background: #2ecc71;
 }
 
+/* Styling icons into text-fields */
+input[type="password"] {
+    padding: 10px;
+    display: block;
+    width: 270px;
+    border-radius: 3px;
+    border: 1px solid #212121;
+    margin: 20px auto;
+    background-image: url('/storage/images/elements/lock.svg');
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+input[required] {
+    border-bottom: 1px solid red;
+}
+
+/* Define PHP related styles */
 .header {
     border-bottom: 1px solid #95a5a6;
     padding: 10px 0px;
@@ -58,4 +80,21 @@ input[type="submit"]:hover {
     align-items: center;
     text-align: center;
     border: 0px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }

@@ -6,7 +6,7 @@
     require '../../../config/database.php';
 
     if (isset($_SESSION['user_id'])) {
-        $records = $connection->prepare('SELECT id,email,password FROM users WHERE id = :id');
+        $records = $connection->prepare('SELECT * FROM users WHERE id = :id');
         $records->bindParam(':id', $_SESSION['user_id']);
         $records->execute();
         $results = $records->fetch(PDO::FETCH_ASSOC);
@@ -39,8 +39,18 @@
     </div>
 
     <?php if (!empty($user)): ?>
-        <br>Welkom <?= $user['email'] ?>! U bent aangemeld.
-        <br><a href="logout.php">Afmelden</a>
+        <br>Welkom <?= $user['firstname'] ?>!
+        <br><br>U bent aangemeld.
+        <br><br>Uw accountstatus is:
+        <?php if ($user['active'] != 0): ?>
+            <p>Actief</p>
+            <form>
+                <input type="text" value="Premium abonnement - €14,99 p/m" readonly>
+            </form>
+        <?php else: ?>
+            Geblokkeerd
+        <?php endif; ?>
+        <a href="logout.php">Afmelden</a>
     <?php else: ?>
         <h1>Meld u aan of registreer een nieuw account</h1>
         <a href="login.php">Aanmelden</a> of
