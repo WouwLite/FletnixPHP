@@ -34,7 +34,7 @@ $pathtype = false;
 // Image / style location
 // Do you host your images on the locally or are they on an other server (like a CDN)?
 // TRUE = Your images AND stylesheets are hosted on an external server (which functions as a Content Delivery Network)
-// FALSE = Your images AND stylesheets are hosted on the local machine (/storage/css and /storage/images)
+// FALSE = Your images AND stylesheets are hosted on the local machine (/storage/OLD-css and /storage/images)
 $cdn = false;
 $cdnurl = 'https://cdn.wouwlite.nl/fletnix.nl/';
 
