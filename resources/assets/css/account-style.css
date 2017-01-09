@@ -10,7 +10,7 @@ body {
 
 /* CSS Form Styling */
 input[type="text"], input[type="email"], input[type="date"] {
-    /*outline: none;*/
+    outline: none;
     padding: 10px;
     display: block;
     width: 300px;
@@ -97,4 +97,9 @@ input[required] {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+
+.uppercase {
+    text-transform: uppercase;
 }

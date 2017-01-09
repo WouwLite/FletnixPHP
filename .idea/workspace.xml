@@ -2,31 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecd4bce6-222d-4156-9bbf-07ceeaca96bf" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/footer.css" afterPath="$PROJECT_DIR$/OLD-css/footer.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/OLD-css/main.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/nav.css" afterPath="$PROJECT_DIR$/OLD-css/nav.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/table.css" afterPath="$PROJECT_DIR$/OLD-css/table.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/company/about.html" afterPath="$PROJECT_DIR$/company/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/company/contact.html" afterPath="$PROJECT_DIR$/company/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/create-account.html" afterPath="$PROJECT_DIR$/dashboard/create-account.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/expected.html" afterPath="$PROJECT_DIR$/dashboard/expected.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/favorites.html" afterPath="$PROJECT_DIR$/dashboard/favorites.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/films.html" afterPath="$PROJECT_DIR$/dashboard/films.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/index.html" afterPath="$PROJECT_DIR$/dashboard/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/just-released.html" afterPath="$PROJECT_DIR$/dashboard/just-released.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/media/movies/nichtrijder.html" afterPath="$PROJECT_DIR$/dashboard/media/movies/nichtrijder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/media/movies/ted.html" afterPath="$PROJECT_DIR$/dashboard/media/movies/ted.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/series.html" afterPath="$PROJECT_DIR$/dashboard/series.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/service/faq.html" afterPath="$PROJECT_DIR$/dashboard/service/faq.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/staff-picks.html" afterPath="$PROJECT_DIR$/dashboard/staff-picks.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paywall.html" afterPath="$PROJECT_DIR$/paywall.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/css/account-style.css" afterPath="$PROJECT_DIR$/resources/assets/css/account-style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/include/main.inc.php" afterPath="$PROJECT_DIR$/resources/include/main.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/errors/404.html" afterPath="$PROJECT_DIR$/resources/views/errors/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template.html" afterPath="$PROJECT_DIR$/template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/account/register.php" afterPath="$PROJECT_DIR$/resources/views/account/register.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,14 +24,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/account/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
               <folding>
                 <marker date="1482543924000" expanded="true" signature="183:217" ph="SELECT id,em... users" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/account/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="87" column="58" lean-forward="true" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
+              <folding>
+                <element signature="e#7#54#0#PHP" expanded="true" />
+                <marker date="1483971868000" expanded="true" signature="624:709" ph="INSERT INTO users... " />
+                <marker date="1483971868000" expanded="true" signature="2426:3323" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account-style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/css/account-style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,9 +87,9 @@
         <option value="$PROJECT_DIR$/resources/views/account/logout.php" />
         <option value="$PROJECT_DIR$/resources/views/account/login.php" />
         <option value="$PROJECT_DIR$/resources/views/account/home.php" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/resources/assets/css/account-style.css" />
         <option value="$PROJECT_DIR$/resources/views/account/register.php" />
-        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -152,6 +154,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="elements" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FletnixPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FletnixPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="members" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -368,7 +392,7 @@
       <workItem from="1482329452281" duration="10471000" />
       <workItem from="1482454016135" duration="6182000" />
       <workItem from="1482495701310" duration="17188000" />
-      <workItem from="1483197888122" duration="3448000" />
+      <workItem from="1483197888122" duration="4951000" />
     </task>
     <task id="LOCAL-00001" summary="Christmas Special XXL">
       <created>1483479470063</created>
@@ -384,17 +408,24 @@
       <option name="project" value="LOCAL" />
       <updated>1483479550127</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Removing old files, changing to new file structure.">
+      <created>1483969849204</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1483969849204</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37289000" />
+    <option name="totallyTimeSpent" value="38792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="830" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19444445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -424,7 +455,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Christmas Special XXL" />
     <MESSAGE value="Christmas Special XXL + Images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Christmas Special XXL + Images" />
+    <MESSAGE value="Removing old files, changing to new file structure." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing old files, changing to new file structure." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -472,8 +504,8 @@
           <caret line="56" column="29" lean-forward="false" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
           <folding>
             <element signature="e#7#54#0#PHP" expanded="true" />
-            <marker date="1482772803000" expanded="true" signature="624:709" ph="INSERT INTO users... " />
-            <marker date="1482772803000" expanded="true" signature="2426:3017" ph="..." />
+            <marker date="1483971868000" expanded="true" signature="624:709" ph="INSERT INTO users... " />
+            <marker date="1483971868000" expanded="true" signature="2426:3323" ph="..." />
           </folding>
         </state>
       </provider>
@@ -603,6 +635,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -669,26 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/account/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="92" column="76" lean-forward="true" selection-start-line="92" selection-start-column="76" selection-end-line="92" selection-end-column="76" />
-          <folding>
-            <element signature="e#7#54#0#PHP" expanded="true" />
-            <marker date="1482772803000" expanded="true" signature="624:709" ph="INSERT INTO users... " />
-            <marker date="1482772803000" expanded="true" signature="2426:3017" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/css/account-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="99" column="1" lean-forward="false" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -731,10 +744,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/account/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
           <folding>
             <marker date="1482543924000" expanded="true" signature="183:217" ph="SELECT id,em... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/css/account-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/account/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="87" column="58" lean-forward="true" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
+          <folding>
+            <element signature="e#7#54#0#PHP" expanded="true" />
+            <marker date="1483971868000" expanded="true" signature="624:709" ph="INSERT INTO users... " />
+            <marker date="1483971868000" expanded="true" signature="2426:3323" ph="..." />
           </folding>
         </state>
       </provider>

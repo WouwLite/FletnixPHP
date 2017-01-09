@@ -77,17 +77,16 @@ endif;
     <form action="register.php" method="POST">
         <h1>Nieuw account</h1>
 <!--            Firstname pattern: Capital Letters, Small Letters, Use of dashes, Use of spaces, minimal 2 - max 32 chars-->
-            <input type="text" pattern="[A-Za-zÀ-ž\-\s]{2,32}" placeholder="Voer uw voornaam in" name="firstname" title="Voer uw naam in zonder special tekens, bijv: John, Jan-Pieter" required autofocus>
-            <input type="date" placeholder="Wat is uw geboortedatum" name="birthday">
-            <input type="text" pattern="[A-Za-zÀ-ž\-\s]{2,150}" placeholder="Voer uw achternaam in" name="lastname">
-            <input type="email" placeholder="Voer uw email in" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Voer een legitiem emailadres in, bijv: john@doe.com" required>
+            <input type="text" pattern="[A-Za-zÀ-ž\-\s]{2,32}" placeholder="Voer uw voornaam in" name="firstname" value="<?php if(isset($_POST['firstname'])){ echo $_POST['firstname'];}?>" title="Voer uw naam in zonder special tekens, bijv: John, Jan-Pieter" required autofocus>
+            <input type="text" pattern="[A-Za-zÀ-ž\-\s]{2,150}" placeholder="Voer uw achternaam in" name="lastname" value="<?php if(isset($_POST['lastname'])){ echo $_POST['lastname'];}?>" required>
+            <input type="email" placeholder="Voer uw email in" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" value="<?php if(isset($_POST['email'])){ echo $_POST['email'];}?>" title="Voer een legitiem emailadres in, bijv: john@doe.com" required>
+            <input type="date" placeholder="Wat is uw geboortedatum" name="birthday" value="<?php if(isset($_POST['birthday'])){ echo $_POST['birthday'];}?>" required>
             <input type="password" placeholder="Voer uw wachtwoord in" name="password" title="Maak een sterk wachtwoord! " required>
             <input type="password" placeholder="Bevestig uw wachtwoord" name="confirm_password" required>
-<!--        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"-->
 
         <h1>SEPA machtiging</h1>
-            <input type="text" placeholder="Voer uw IBAN nummer in" name="iban">
-            <input type="text" placeholder="Voer uw BIC code in" name="bic">
+            <input class="uppercase" pattern="^NL\d{2}[A-Z]{4}\d{10}$" type="text" placeholder="Voer uw IBAN nummer in" name="iban" title="Voorbeeld: NL01KNAB123456789" value="<?php if(isset($_POST['iban'])){ echo $_POST['iban'];}?>">
+            <input class="uppercase" type="text" placeholder="Voer uw BIC code in" name="bic" value="<?php if(isset($_POST['bic'])){ echo $_POST['bic'];}?>">
             <p>Gaat u akkoord met automatische incasso middels <a href="#">SEPA</a>?</p>
             <input type="radio" value="Ja" name="sepa-approved" checked>Ja
             <input type="radio" value="Nee" name="sepa-approved">Nee<br><br>
