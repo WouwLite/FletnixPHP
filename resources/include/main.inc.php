@@ -11,6 +11,7 @@
     <!-- Use CDN own for CSS Stylesheets -->
     <link type="text/css" rel="stylesheet" href="//cdn.wouwlite.eu/fletnix.nl/resources/assets/css/main.css">
     <link type="text/css" rel="stylesheet" href="/resources/assets/css/nav.css">
+    <link type="text/css" rel="stylesheet" href="/resources/assets/css/search.css">
 <!--    <link type="text/css" rel="stylesheet" href="//cdn.wouwlite.eu/fletnix.nl/resources/assets/css/nav.css">-->
     <link type="text/css" rel="stylesheet" href="//cdn.wouwlite.eu/fletnix.nl/resources/assets/css/footer.css">
 
@@ -28,18 +29,18 @@
         <li><a href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/views/account/paywall.php">Abonnementen</a></li>
         <li><a href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/views/members/films.php">Films</a></li>
         <li><a href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/views/members/series.php">Series</a></li>
+        <li>
+            <form>
+                <input type="search" id="search" name="Search" placeholder="Zoeken naar..."/>
+                <!--                <input type="submit" value="Zoeken"/>-->
+            </form>
+        </li>
     </ul>
 </nav>
 
 <!-- The vertical nav contains search bar, populair films, latest releases, etc.  -->
 <div class="container">
     <div class="nav vertnav">
-        <div class="search">
-            <form>
-                <input type="text" id="search" name="Search" placeholder="Zoeken naar..."/>
-                <input type="submit" value="Zoeken"/>
-            </form>
-        </div>
         <ul>
             <li><a href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/views/account/login.php">Aanmelden</a></li>
             <li class="active"><a href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/views/members/">Populair</a></li>

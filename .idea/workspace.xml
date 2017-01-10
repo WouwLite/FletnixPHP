@@ -1,74 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecd4bce6-222d-4156-9bbf-07ceeaca96bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/bigbuckbunny/bbb.jpg" />
+    <list default="true" id="ecd4bce6-222d-4156-9bbf-07ceeaca96bf" name="Default" comment="Updates stylesheets, added CDN for CSS - Images - Large files like movies, updates template files, added additional security measurements, relocated files to right directory, fixed error with path's show or linked incorrectly.">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/bigbuckbunny/bbb_sunflower_1080p_60fps_normal.mp4" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OLDdashboard/series.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OLDindex.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/users.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/media/movies/bigbuckbunny.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/media/movies/ted.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/members/favorites.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/members/films.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/members/just-released.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/members/series.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/members/staff-picks.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/css/search.css" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dashboard/expected.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dashboard/favorites.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dashboard/films.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dashboard/just-released.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dashboard/media/movies/ted.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dashboard/series.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/company/about.html" afterPath="$PROJECT_DIR$/resources/views/company/about.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/company/contact.html" afterPath="$PROJECT_DIR$/resources/views/company/contact.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/app.php" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/create-account.html" afterPath="$PROJECT_DIR$/OLDdashboard/create-account.html" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/index.html" afterPath="$PROJECT_DIR$/OLDdashboard/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/media/movies/nichtrijder.html" afterPath="$PROJECT_DIR$/resources/views/media/movies/nichtrijder.html" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/service/faq.html" afterPath="$PROJECT_DIR$/OLDdashboard/service/faq.html" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/staff-picks.html" afterPath="$PROJECT_DIR$/OLDdashboard/films.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/elements/play.png" afterPath="$PROJECT_DIR$/storage/images/elements/play.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/hobbit/Hobbit.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/hobbit/Hobbit.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/hobbit/Hobbit2.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/hobbit/Hobbit2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/hobbit/Hobbit2Background.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/hobbit/Hobbit2Background.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/hobbit/Hobbit3.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/hobbit/Hobbit3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/hobbit/Hobbit3Background.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/hobbit/Hobbit3Background.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/hobbit/HobbitBackground.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/hobbit/HobbitBackground.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/independanceday/IndependanceDayResurgence.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/independanceday/IndependanceDayResurgence.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/independanceday/IndependanceDayResurgenceBackground.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/independanceday/IndependanceDayResurgenceBackground.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/independanceday/IndependenceDay.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/independanceday/IndependenceDay.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/independanceday/IndependenceDayBackground.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/independanceday/IndependenceDayBackground.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/nichtrijder/Nicht_Rijder.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/sd/nichtrijder/Nicht_Rijder.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/nichtrijder/wallpaper.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/sd/nichtrijder/wallpaper.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/ted/Ted.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/ted/Ted.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/ted/Ted2.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/ted/Ted2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/ted/Ted2Background.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/ted/Ted2Background.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/ted/TedBackground.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/ted/TedBackground.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/thelordoftherings/TheLordoftheRingsTheFellowshipoftheRing.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/thelordoftherings/TheLordoftheRingsTheFellowshipoftheRing.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/thelordoftherings/TheLordoftheRingsTheFellowshipoftheRingBackground.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/thelordoftherings/TheLordoftheRingsTheFellowshipoftheRingBackground.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/thelordoftherings/TheLordoftheRingsTheReturnoftheKing.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/thelordoftherings/TheLordoftheRingsTheReturnoftheKing.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/thelordoftherings/TheLordoftheRingsTheReturnoftheKingBackground.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/thelordoftherings/TheLordoftheRingsTheReturnoftheKingBackground.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/thelordoftherings/TheLordoftheRingsTheTwoTowers.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/thelordoftherings/TheLordoftheRingsTheTwoTowers.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/thelordoftherings/TheLordoftheRingsTheTwoTowersBackground.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/thelordoftherings/TheLordoftheRingsTheTwoTowersBackground.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/thematrix/TheMatrix.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/thematrix/TheMatrix.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/thematrix/TheMatrixBackground.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/thematrix/TheMatrixBackground.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/thematrix/TheMatrixReloaded.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/thematrix/TheMatrixReloaded.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/movies/thematrix/TheMatrixReloadedBackground.jpg" afterPath="$PROJECT_DIR$/storage/media/movies/fullhd/thematrix/TheMatrixReloadedBackground.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/paywall.html" afterPath="$PROJECT_DIR$/resources/views/account/paywall.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htaccess.txt" afterPath="$PROJECT_DIR$/htaccess.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/css/account-style.css" afterPath="$PROJECT_DIR$/resources/assets/css/account-style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/include/footer.inc.php" afterPath="$PROJECT_DIR$/resources/include/footer.inc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/include/main.inc.php" afterPath="$PROJECT_DIR$/resources/include/main.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/account/home.php" afterPath="$PROJECT_DIR$/resources/views/account/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/account/login.php" afterPath="$PROJECT_DIR$/resources/views/account/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/account/register.php" afterPath="$PROJECT_DIR$/resources/views/account/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/errors/404.html" afterPath="$PROJECT_DIR$/resources/views/errors/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template.html" afterPath="$PROJECT_DIR$/template.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,7 +35,38 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="search.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/assets/css/search.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/include/main.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account-style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/css/account-style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -123,8 +102,9 @@
         <option value="$PROJECT_DIR$/resources/views/media/movies/bigbuckbunny.php" />
         <option value="$PROJECT_DIR$/resources/views/account/register.php" />
         <option value="$PROJECT_DIR$/resources/views/account/login.php" />
-        <option value="$PROJECT_DIR$/resources/include/main.inc.php" />
         <option value="$PROJECT_DIR$/resources/assets/css/nav.css" />
+        <option value="$PROJECT_DIR$/resources/include/main.inc.php" />
+        <option value="$PROJECT_DIR$/resources/assets/css/search.css" />
       </list>
     </option>
   </component>
@@ -167,6 +147,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="FletnixPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FletnixPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FletnixPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FletnixPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FletnixPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FletnixPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FletnixPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -280,7 +314,7 @@
       <workItem from="1482329452281" duration="10471000" />
       <workItem from="1482454016135" duration="6182000" />
       <workItem from="1482495701310" duration="17188000" />
-      <workItem from="1483197888122" duration="18973000" />
+      <workItem from="1483197888122" duration="19992000" />
     </task>
     <task id="LOCAL-00001" summary="Christmas Special XXL">
       <created>1483479470063</created>
@@ -310,11 +344,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483972026697</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updates stylesheets, added CDN for CSS - Images - Large files like movies, updates template files, added additional security measurements, relocated files to right directory, fixed error with path's show or linked incorrectly.">
+      <created>1484074584535</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1484074584535</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52814000" />
+    <option name="totallyTimeSpent" value="53833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="830" extended-state="0" />
@@ -352,7 +393,8 @@
     <MESSAGE value="Christmas Special XXL + Images" />
     <MESSAGE value="Removing old files, changing to new file structure." />
     <MESSAGE value="Added paterns and keep data if registration fails." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added paterns and keep data if registration fails." />
+    <MESSAGE value="Updates stylesheets, added CDN for CSS - Images - Large files like movies, updates template files, added additional security measurements, relocated files to right directory, fixed error with path's show or linked incorrectly." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates stylesheets, added CDN for CSS - Images - Large files like movies, updates template files, added additional security measurements, relocated files to right directory, fixed error with path's show or linked incorrectly." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -609,14 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/css/account-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/media/movies/ted.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
@@ -700,14 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/include/main.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/account/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -745,6 +771,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/css/account-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/include/main.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/css/search.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
           <folding />
         </state>
       </provider>
