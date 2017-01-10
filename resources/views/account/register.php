@@ -17,7 +17,7 @@ if (isset($_SESSION['user_id'])) {
 $status = false;
 $message = '';
 $success = 'Uw account is aangemaakt!';
-$fail = 'Oh jee! Er is een fout opgetreden! Controleer uw info en probeer het overnieuw.';
+$fail = 'Something went terribly wrong!';
 
 // Check if both email and password are not empty
 if (!empty($_POST['email']) && !empty($_POST['password'])):
@@ -36,6 +36,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])):
     if ($statement->execute()):
         $message = $success;
         $status = true;
+        header( "Refresh:1; url=login.php", true, 303);
     else:
         $message = $fail;
         $status = false;
@@ -54,7 +55,7 @@ endif;
     <meta name="description" content="Fletnix Video-on-Demand">
     <meta name="author" content="Jordy & Joel BV">
 
-    <link type="text/css" rel="stylesheet" href="/resources/assets/css/account-style.css">
+    <link type="text/css" rel="stylesheet" href="//cdn.wouwlite.eu/fletnix.nl/resources/assets/css/account-style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
 </head>
 <body>

@@ -11,10 +11,10 @@
     <meta name="author" content="Jordy & Joel BV">
 
 
-    <link type="text/css" rel="stylesheet" href="OLD-css/main.css">
-    <link type="text/css" rel="stylesheet" href="OLD-css/nav.css">
-    <link type="text/css" rel="stylesheet" href="OLD-css/footer.css">
-    <link type="text/css" rel="stylesheet" href="OLD-css/table.css">
+    <link type="text/css" rel="stylesheet" href="../../../OLD-css/main.css">
+    <link type="text/css" rel="stylesheet" href="../../../OLD-css/nav.css">
+    <link type="text/css" rel="stylesheet" href="../../../OLD-css/footer.css">
+    <link type="text/css" rel="stylesheet" href="../../../OLD-css/table.css">
 
 </head>
 
@@ -27,13 +27,13 @@
 
         <li class="logo"><h1>Fletnix</h1></li>
 
-        <li><a href="dashboard/index.html"><strong>Dashboard</strong></a></li>
+        <li><a href="../../../OLDdashboard/index.html"><strong>Dashboard</strong></a></li>
 
-        <li><a href="paywall.html">Abonnementen</a></li>
+        <li><a href="paywall.php">Abonnementen</a></li>
 
-        <li><a href="dashboard/films.html">Films</a></li>
+        <li><a href="../../../OLDdashboard/films.html">Films</a></li>
 
-        <li><a href="dashboard/series.html">Series</a></li>
+        <li><a href="../../../OLDdashboard/series.html">Series</a></li>
 
     </ul>
 </nav>
@@ -57,15 +57,15 @@
 
         <ul>
 
-            <li><a href="dashboard/just-released.html">Net uitgebracht</a></li>
+            <li><a href="../members/just-released.php">Net uitgebracht</a></li>
 
-            <li><a href="index.html">Populair</a></li>
+            <li><a href="../../../OLDindex.html">Populair</a></li>
 
-            <li><a href="dashboard/expected.html">Verwacht</a></li>
+            <li><a href="../members/expected.php">Verwacht</a></li>
 
-            <li><a href="dashboard/favorites.html">Favorieten</a></li>
+            <li><a href="../members/favorites.php">Favorieten</a></li>
 
-            <li><a href="dashboard/staff-picks.html">Staff Picks</a></li>
+            <li><a href="../members/staff-picks.php">Staff Picks</a></li>
 
         </ul>
 
@@ -140,8 +140,8 @@
             <div class="footer-account margin15">
                 <ul>
                     <li><h2>Account</h2></li>
-                    <li><a href="dashboard/">Dashboard</a></li>
-                    <li><a href="dashboard/create-account.html">Account aanmaken</a></li>
+                    <li><a href="../../../OLDdashboard">Dashboard</a></li>
+                    <li><a href="../../../OLDdashboard/create-account.html">Account aanmaken</a></li>
                     <!--<li><a href="dashboard/financial.html">Financieel Dashboard</a></li>-->
                     <!--<li><a href="dashboard/remove-account.html">Account verwijderen</a></li>-->
                 </ul>
@@ -149,9 +149,9 @@
             <div class="footer-business margin15">
                 <ul>
                     <li><h2>Bedrijf</h2></li>
-                    <li><a href="company/about.html">Over ons</a></li>
+                    <li><a href="../company/about.html">Over ons</a></li>
                     <!--<li><a href="company/blog.html">Blog</a></li>-->
-                    <li><a href="company/contact.html">Contact</a></li>
+                    <li><a href="../company/contact.html">Contact</a></li>
                     <!--<li><a href="company/jobs.html">Werken bij Fletnix</a></li>-->
                 </ul>
             </div>

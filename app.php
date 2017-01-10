@@ -25,6 +25,7 @@ $locale = 'nl';
 $abspath = 'https://fletnix.nl/demo';
 // Relative path
 $relpath = ($_SERVER["DOCUMENT_ROOT"] . '/demo');
+define(BASE_PATH, dirname(__FILE__));
 
 // Select the url that matches your case
 // TRUE = absolute path (i.e.: https://www.yourdomain.com)
@@ -35,8 +36,8 @@ $pathtype = false;
 // Do you host your images on the locally or are they on an other server (like a CDN)?
 // TRUE = Your images AND stylesheets are hosted on an external server (which functions as a Content Delivery Network)
 // FALSE = Your images AND stylesheets are hosted on the local machine (/storage/OLD-css and /storage/images)
-$cdn = false;
-$cdnurl = 'https://cdn.wouwlite.nl/fletnix.nl/';
+$cdn = true;
+$cdnurl = 'https://cdn.wouwlite.eu/fletnix.nl/';
 
 
 /*

@@ -28,7 +28,8 @@ if (!empty($_POST['email']) && !empty($_POST['password'])):
 
     if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
         $_SESSION['user_id'] = $results['id'];
-        header("Location: home.php");
+//        header("Location: home.php");
+        header("Location: /");
     } else {
         $message = $fail;
         $status = false;
@@ -47,7 +48,7 @@ endif;
     <meta name="description" content="Fletnix Video-on-Demand">
     <meta name="author" content="Jordy & Joel BV">
 
-    <link type="text/css" rel="stylesheet" href="/resources/assets/css/account-style.css">
+    <link type="text/css" rel="stylesheet" href="//cdn.wouwlite.eu/fletnix.nl/resources/assets/css/account-style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
 </head>
 <body>

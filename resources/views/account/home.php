@@ -5,6 +5,7 @@
     // Include database info
     require '../../../config/database.php';
 
+
     if (isset($_SESSION['user_id'])) {
         $records = $connection->prepare('SELECT * FROM users WHERE id = :id');
         $records->bindParam(':id', $_SESSION['user_id']);
@@ -29,7 +30,7 @@
     <meta name="description" content="Fletnix Video-on-Demand">
     <meta name="author" content="Jordy & Joel BV">
 
-    <link type="text/css" rel="stylesheet" href="/resources/assets/css/account-style.css">
+    <link type="text/css" rel="stylesheet" href="//cdn.wouwlite.eu/fletnix.nl/resources/assets/css/account-style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
 </head>
 <body>
