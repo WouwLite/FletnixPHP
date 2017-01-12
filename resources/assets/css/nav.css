@@ -89,25 +89,18 @@ nav ul li a:hover {
     color: #00FF00;
 }
 
-.account {
-    background-color: #424242;
-}
-
 .vertnav ul .active {
     background-color: #263238;
 }
 
+.vertnav ul .account {
+    background-color: #27ae60;
+}
+
+.vertnav ul .account:hover {
+    background-color: #2ecc71;
+}
+
 .search {
     padding: 15px;
-}
-
-input[type=submit] {
-    width: 100%;
-    padding: 5px, auto, 0.5em, auto;
-}
-
-input[type=text] {
-    width: 98%;
-    font-size: 22px;
-    padding: 0.5em, auto, 0.5em, auto;
 }

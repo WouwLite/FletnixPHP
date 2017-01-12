@@ -143,7 +143,4 @@ ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 ```
 
-
-```
-# Example: https://www.fletnix.nl
-```
+# Demo: https://www.fletnix.nl

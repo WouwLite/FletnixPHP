@@ -1,12 +1,12 @@
 /* Temporary body style */
 /* Once converted to theme, this could function as back-up if the theme OLD-css fails */
-/*body {*/
-    /*background: #ecf0f1;*/
-    /*font-family: 'Raleway', sans-serif;*/
-    /*magin: 0px;*/
-    /*padding: 0px;*/
-    /*text-align: center;*/
-/*}*/
+body {
+    background: #ecf0f1;
+    font-family: 'Raleway', sans-serif;
+    magin: 0px;
+    padding: 0px;
+    text-align: center;
+}
 
 /* CSS Form Styling */
 input[type="text"], input[type="email"], input[type="date"] {
@@ -44,14 +44,26 @@ input[type="password"] {
     border-radius: 3px;
     border: 1px solid #212121;
     margin: 20px auto;
-    background-image: url('/storage/images/elements/lock.svg');
+    background-image: url(/storage/images/elements/lock.svg);
     background-position: 10px 50%;
     background-repeat: no-repeat;
     padding-left: 40px;
 }
 
 input[required] {
-    border-bottom: 1px solid red;
+    border-right: 1px solid red;
+}
+
+select {
+    background-color: #FFFFFF;
+    outline: none;
+    padding: 10px;
+    display: block;
+    width: 320px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #212121;
+    margin: 20px auto;
 }
 
 /* Define PHP related styles */

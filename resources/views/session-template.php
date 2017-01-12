@@ -3,9 +3,11 @@
 session_start();
 
 // Include database info
-require '../../../../config/database.php';
+//require '/config/database.php';
+require_once ($_SERVER['DOCUMENT_ROOT'] . '/config/database.php');
+include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/main.inc.php');
 
-include '../../../include/main.inc.php';
+//include '../include/main.inc.php';
 
 if (isset($_SESSION['user_id'])) {
     $records = $connection->prepare('SELECT * FROM users WHERE id = :id');
@@ -21,21 +23,19 @@ if (isset($_SESSION['user_id'])) {
 }
 ?>
 
-<?php if (!empty($user)): ?>
+<?php if (!empty($user)): ?>s
     <br>Welkom <?= $user['firstname'] ?>!
-        <?php
+    <?php
 
-            echo "Hello world!";
+    echo "Hello world!";
 
-        ?>
+    ?>
     <a class="button" href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/views/account/logout.php">Afmelden</a>
 <?php else: ?>
-    <center>
     <h1>Meld u aan of registreer een nieuw account</h1>
     <a class="button" href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/views/account/login.php">Aanmelden</a> of
     <a class="button" href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/views/account/register.php">Registreren</a>
-    </center>
 <?php endif; ?>
 
 
-<?php include '../../../include/footer.inc.php'; ?>
+<?php include '../include/footer.inc.php'; ?>
