@@ -1,22 +1,36 @@
 <?php
 
-    session_start();
+session_start();
 
-    // Include database info
-    require '../../../config/database.php';
+include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/session.inc.php');
+include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/main.inc.php');
 
+?>
 
-    if (isset($_SESSION['user_id'])) {
-        $records = $connection->prepare('SELECT * FROM users WHERE id = :id');
-        $records->bindParam(':id', $_SESSION['user_id']);
-        $records->execute();
-        $results = $records->fetch(PDO::FETCH_ASSOC);
+    <!-- Check if user is logged in, if true > show page, if false > show login or register options -->
+<?php if (!empty($user)): ?>
+    <?php
 
-        $user = NULL;
+    $rootpath = $_SERVER['SERVER_NAME'];
+    $mediapath = "/resources/views/media/movies/";
+    $mediaMovies = array("ted", "bigbuckbunny", "nichtrijder", "hobbit", "thematrix", "hobbit2", "independanceday", "the-lord-of-the-rings");
+    $mediaSeries = array("game-of-thrones", "24", "familyguy", "southpark", "person-of-interest", "ica", "the-grand-tour", "arrow");
+    ?>
 
-        if (count($results) > 0) {
-            $user = $results;
+    <h1>Staff Picks</h1><br>
+
+    <ul class="media">
+        <?php
+        shuffle($mediaMovies);
+        foreach ($mediaMovies as $movie) {
+            echo "<li><a href=\"".$mediapath."/bigbuckbunny.php\"><img src=\"/storage/media/movies/fullhd/".$movie."/".$movie.".jpg\" class=\"overlay placeholder\"></a></li>";
         }
-    }
+        ?>
+    </ul>
 
-echo "//resources/views/members/films.php";
+<?php else: ?>
+    <?php include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/login-message.inc.php'); ?>
+<?php endif; ?>
+
+
+<?php include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/footer.inc.php'); ?>

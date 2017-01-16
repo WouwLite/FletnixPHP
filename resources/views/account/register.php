@@ -24,13 +24,13 @@ if (!empty($_POST['email']) && !empty($_POST['password'])):
 
     // Add new user to database via POST
     //:email and :password are to prevent SQL injections
-    $sql = "INSERT INTO users (email, password, firstname, lastname, birthday, country) VALUES (:email, :password, :firstname, :lastname, :birthday, :country)";
+    $sql = "INSERT INTO users (email, password, firstname, lastname, birthday) VALUES (:email, :password, :firstname, :lastname, :birthday)";
     $statement = $connection->prepare($sql);
     $statement->bindParam(':email', $_POST['email']);
     $statement->bindParam(':firstname', $_POST['firstname']);
     $statement->bindParam(':lastname', $_POST['lastname']);
     $statement->bindParam(':birthday', $_POST['birthday']);
-    $statement->bindParam(':country', $_POST['country']);
+//    $statement->bindParam(':country', $_POST['country']);
     $statement->bindParam(':password', password_hash($_POST['password'], PASSWORD_BCRYPT));
 
     // Once both email and password are entered, execute command
@@ -43,6 +43,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])):
     else:
         $message = $fail;
         $status = false;
+        echo "Couldn't enter data: ".$connection->error;
     endif;
 
 endif;

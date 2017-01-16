@@ -2,40 +2,40 @@
 
 session_start();
 
-// Include database info
-require '../../../../config/database.php';
+include ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/session.inc.php');
+include ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/main.inc.php');
 
-include '../../../include/main.inc.php';
+$movietitleflat = 'bigbuckbunny';
+$movietitle = 'Big Fuck Bunny';
+$movieyear = '2008';
+$movietime = '12';
+$moviedescription = 'Big Buck Bunny is een animatiefilm gemaakt door het Blender Institute met behulp van opensourcesoftware, net zoals het voorgaande project Elephants Dream.';
 
-if (isset($_SESSION['user_id'])) {
-    $records = $connection->prepare('SELECT * FROM users WHERE id = :id');
-    $records->bindParam(':id', $_SESSION['user_id']);
-    $records->execute();
-    $results = $records->fetch(PDO::FETCH_ASSOC);
-
-    $user = NULL;
-
-    if (count($results) > 0) {
-        $user = $results;
+if (!empty($user)) {
+    if ($user['active'] != 0) {
+        echo "<div class=\"main>\"";
+            echo "<div class=\"margin15\">";
+                echo "<h1>$movietitle</h1><br>";
+                echo "<div class=\"align-center\">";
+                    echo "<video width=\"100%\" height=\"100%\" controls>";
+                        echo "<source src=\"//$rootpath/storage/media/movies/fullhd/$movietitleflat/$movietitleflat.mp4\" type=\"video/mp4\">";
+                    echo "</video>";
+                echo "</div>";
+                echo "<h1>Film details</h1>";
+                echo "<h3>Jaar:</h3>";
+                    echo "<p>$movieyear</p>";
+                echo "<h2>Filmduur:</h2>";
+                    echo "<p>$movietime minuten</p>";
+                echo "<h2>Omschrijving:</h2>";
+                    echo "<p>$moviedescription</p>";
+                echo "<br>";
+            echo "</div>";
+        echo "</div>";
+    } else {
+        include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/subscription-message.inc.php');
     }
+} else {
+    include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/login-message.inc.php');
 }
-?>
 
-<?php if (!empty($user)): ?>
-    <br>Welkom <?= $user['firstname'] ?>!
-        <?php
-
-            echo "Hello world!";
-
-        ?>
-    <a class="button" href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/views/account/logout.php">Afmelden</a>
-<?php else: ?>
-    <center>
-    <h1>Meld u aan of registreer een nieuw account</h1>
-    <a class="button" href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/views/account/login.php">Aanmelden</a> of
-    <a class="button" href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/views/account/register.php">Registreren</a>
-    </center>
-<?php endif; ?>
-
-
-<?php include '../../../include/footer.inc.php'; ?>
+include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/footer.inc.php');

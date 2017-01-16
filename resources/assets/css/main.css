@@ -6,7 +6,8 @@
 body {
     background-color: #263238;
     color: #222;
-    font-family: 'Comfortaa', cursive;
+    /*font-family: 'Comfortaa', cursive;*/
+    font-family: 'Nunito', sans-serif;
     font-weight: 300;
     margin: 0;
     padding: 0;
@@ -114,4 +115,8 @@ footer {
 
 .button:hover {
     background: #2ecc71;
+}
+
+.align-center {
+    text-align: center;
 }

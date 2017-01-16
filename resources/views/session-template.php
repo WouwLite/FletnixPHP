@@ -2,40 +2,30 @@
 
 session_start();
 
-// Include database info
-//require '/config/database.php';
-require_once ($_SERVER['DOCUMENT_ROOT'] . '/config/database.php');
+include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/session.inc.php');
 include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/main.inc.php');
 
-//include '../include/main.inc.php';
+if (!empty($user)) {
+    $rootpath = $_SERVER['SERVER_NAME'];
+    $mediapath = "/resources/views/media/movies/";
+    $mediaMovies = array("ted", "bigbuckbunny", "nichtrijder", "hobbit", "thematrix", "hobbit2", "independanceday", "the-lord-of-the-rings");
+    $mediaSeries = array("game-of-thrones", "24", "familyguy", "southpark", "person-of-interest", "ica", "the-grand-tour", "arrow");
 
-if (isset($_SESSION['user_id'])) {
-    $records = $connection->prepare('SELECT * FROM users WHERE id = :id');
-    $records->bindParam(':id', $_SESSION['user_id']);
-    $records->execute();
-    $results = $records->fetch(PDO::FETCH_ASSOC);
-
-    $user = NULL;
-
-    if (count($results) > 0) {
-        $user = $results;
-    }
+    echo "<h1>Het is nét niks!</h1>";
+    echo "<ul class=\"media\">";
+        shuffle($mediaMovies);
+        foreach ($mediaMovies as $movie) {
+            echo "<li><a href=\"".$mediapath."/bigbuckbunny.php\"><img src=\"/storage/media/movies/fullhd/".$movie."/".$movie.".jpg\" class=\"overlay placeholder\"></a></li>";
+        }
+    echo "</ul>";
+    echo "<ul class=\"media\">";
+        shuffle($mediaSeries);
+        foreach ($mediaSeries as $serie) {
+            echo "<li><a href=\"".$mediapath.$serie.".php\"><img src=\"/storage/media/series/".$serie."/".$serie.".jpg\" class=\"overlay placeholder\"></a></li>";
+        }
+    echo "</ul>";
+} else {
+    include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/login-message.inc.php');
 }
-?>
 
-<?php if (!empty($user)): ?>s
-    <br>Welkom <?= $user['firstname'] ?>!
-    <?php
-
-    echo "Hello world!";
-
-    ?>
-    <a class="button" href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/views/account/logout.php">Afmelden</a>
-<?php else: ?>
-    <h1>Meld u aan of registreer een nieuw account</h1>
-    <a class="button" href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/views/account/login.php">Aanmelden</a> of
-    <a class="button" href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/views/account/register.php">Registreren</a>
-<?php endif; ?>
-
-
-<?php include '../include/footer.inc.php'; ?>
+include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/footer.inc.php');

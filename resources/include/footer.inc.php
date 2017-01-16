@@ -35,7 +35,7 @@
         </div>
     </div>
     <div class="container copyright">
-        <p>© 2016 Fletnix | Alle rechten voorbehouden</p>
+        <p>&copy; 2016-<?php echo date("Y"); ?> Fletnix | Alle rechten voorbehouden</p>
     </div>
 </footer>
 </body>

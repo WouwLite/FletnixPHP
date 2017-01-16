@@ -93,14 +93,26 @@ nav ul li a:hover {
     background-color: #263238;
 }
 
-.vertnav ul .account {
+.vertnav ul .account-login {
     background-color: #27ae60;
+    background-image: url(/storage/images/elements/lock-white.svg);
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    padding-left: 40px;
 }
 
-.vertnav ul .account:hover {
+.vertnav ul .account-login:hover {
     background-color: #2ecc71;
 }
 
-.search {
-    padding: 15px;
+.vertnav ul .account-logout {
+    background-color: #C62828;
+    background-image: url(/storage/images/elements/lock-white.svg);
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+.vertnav ul .account-logout:hover {
+    background-color: #E53935;
 }

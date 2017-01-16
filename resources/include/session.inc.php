@@ -3,7 +3,6 @@
 // Include database info
 //require '/config/database.php';
 require_once ($_SERVER['DOCUMENT_ROOT'] . '/config/database.php');
-include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/main.inc.php');
 
 //include '../include/main.inc.php';
 

@@ -3,10 +3,11 @@
 session_start();
 
 include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/session.inc.php');
+include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/main.inc.php');
 
 ?>
 
-<!-- Check if user is logged in, if true > show page, if false > show login or register options -->
+    <!-- Check if user is logged in, if true > show page, if false > show login or register options -->
 <?php if (!empty($user)): ?>
     <?php
 
@@ -16,7 +17,7 @@ include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/session.inc.php');
     $mediaSeries = array("game-of-thrones", "24", "familyguy", "southpark", "person-of-interest", "ica", "the-grand-tour", "arrow");
     ?>
 
-    <h1>Ons meest populaire aanbod</h1><br>
+    <h1>Uw persoonlijk aanbod</h1><br>
 
     <ul class="media">
         <?php
@@ -36,10 +37,8 @@ include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/session.inc.php');
     </ul>
 
 <?php else: ?>
-    <h1>Meld u aan of registreer een nieuw account</h1>
-    <a class="button" href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/views/account/login.php">Aanmelden</a> of
-    <a class="button" href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/views/account/register.php">Registreren</a>
+    <?php include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/login-message.inc.php'); ?>
 <?php endif; ?>
 
 
-<?php include '../include/footer.inc.php'; ?>
+<?php include_once ($_SERVER['DOCUMENT_ROOT'] . '/resources/include/footer.inc.php'); ?>
