@@ -101,6 +101,13 @@ $countries = array("Afghanistan", "Albania", "Algeria", "American Samoa", "Andor
             <input type="password" placeholder="Voer uw wachtwoord in" name="password" title="Maak een sterk wachtwoord! " required>
             <input type="password" placeholder="Bevestig uw wachtwoord" name="confirm_password" required>
 
+        <h1>Abonnement</h1>
+            <select name="plan">
+                <option value="3">Pro €14,99 per maand</option>
+                <option value="2">HD €8,99 per maand</option>
+                <option value="1">Basis €3,99 per maand</option>
+            </select>
+
         <h1>SEPA machtiging</h1>
             <input class="uppercase" pattern="^NL\d{2}[A-Z]{4}\d{10}$" type="text" placeholder="Voer uw IBAN nummer in" name="iban" title="Voorbeeld: NL01KNAB123456789" value="<?php if(isset($_POST['iban'])){ echo $_POST['iban'];}?>">
             <input class="uppercase" type="text" placeholder="Voer uw BIC code in" name="bic" value="<?php if(isset($_POST['bic'])){ echo $_POST['bic'];}?>">

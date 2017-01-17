@@ -12,12 +12,9 @@
     if (file_exists($page)) {
         include($page);
     }
-    else {
-        echo 'Het opgevraagde bestand bestaat niet.';
-    }
 ?>
 
-<h1>Ons meest populaire aanbod</h1><br>
+<h1>Een greep uit ons aanbod</h1><br>
 
 <ul class="media">
     <?php

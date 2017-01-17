@@ -114,9 +114,13 @@ footer {
 }
 
 .button:hover {
-    background: #2ecc71;
+    background: #66BB6A;
 }
 
 .align-center {
     text-align: center;
+}
+
+.padding-top {
+    padding-top: 2em;
 }

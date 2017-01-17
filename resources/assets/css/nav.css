@@ -94,7 +94,7 @@ nav ul li a:hover {
 }
 
 .vertnav ul .account-login {
-    background-color: #27ae60;
+    background-color: #4CAF50;
     background-image: url(/storage/images/elements/lock-white.svg);
     background-position: 10px 50%;
     background-repeat: no-repeat;
@@ -102,7 +102,7 @@ nav ul li a:hover {
 }
 
 .vertnav ul .account-login:hover {
-    background-color: #2ecc71;
+    background-color: #66BB6A;
 }
 
 .vertnav ul .account-logout {

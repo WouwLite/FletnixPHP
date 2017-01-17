@@ -51,7 +51,8 @@
         <?php else: ?>
             Geblokkeerd
         <?php endif; ?>
-        <a href="logout.php">Afmelden</a>
+        <a class="button" href="//<?php echo $_SERVER['SERVER_NAME'] ?>">Go Home</a> of
+        <a class="button button-red" href="logout.php">Afmelden</a>
     <?php else: ?>
         <h1>Meld u aan of registreer een nieuw account</h1>
         <a href="login.php">Aanmelden</a> of

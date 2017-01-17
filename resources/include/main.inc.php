@@ -1,3 +1,4 @@
+<!-- /resources/include/main.inc.php -->
 <?php
 
     session_start();
@@ -19,13 +20,17 @@
     <meta name="description" content="Fletnix Video-on-Demand">
     <meta name="author" content="Jordy & Joel BV">
 
-    <!-- Use CDN own for CSS Stylesheets -->
+    <!-- /resources/include/styles.inc.php -->
+    <!-- Local Stylesheets -->
     <link type="text/css" rel="stylesheet" href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/assets/css/main.css">
     <link type="text/css" rel="stylesheet" href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/assets/css/nav.css">
     <link type="text/css" rel="stylesheet" href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/assets/css/search.css">
     <link type="text/css" rel="stylesheet" href="//<?php echo $_SERVER['SERVER_NAME'] ?>/resources/assets/css/footer.css">
 
     <!-- External Stylesheets -->
+
+
+    <!-- External Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans|Comfortaa" rel="stylesheet">
 
 </head>
@@ -40,8 +45,8 @@
             <li><a href="//<?php echo $_SERVER['SERVER_NAME'].$views ?>/account/home.php">Account</a></li>
         <?php endif; ?>
         <li><a href="//<?php echo $_SERVER['SERVER_NAME'].$views ?>/account/paywall.php">Abonnementen</a></li>
-        <li><a href="//<?php echo $_SERVER['SERVER_NAME'].$views ?>/members/films.php">Films</a></li>
-        <li><a href="//<?php echo $_SERVER['SERVER_NAME'].$views ?>/members/series.php">Series</a></li>
+        <li><a href="//<?php echo $_SERVER['SERVER_NAME'] ?>/?page=films">Films</a></li>
+        <li><a href="//<?php echo $_SERVER['SERVER_NAME'] ?>/?page=series">Series</a></li>
         <li>
             <form>
                 <input type="search" id="search" name="Search" placeholder="Zoeken naar..."/>
@@ -50,19 +55,20 @@
     </ul>
 </nav>
 
-<!-- The vertical nav contains search bar, populair films, latest releases, etc.  -->
+<!-- The vertical nav contains search bar, popular films, latest releases, etc.  -->
 <div class="container">
     <div class="nav vertnav">
         <ul>
             <?php if (!empty($user)): ?>
                 <li class="account-logout"><a href="//<?php echo $_SERVER['SERVER_NAME'].$views ?>/account/logout.php">Afmelden</a></li>
+                <li class="active"><a href="//<?php echo $_SERVER['SERVER_NAME'] ?>">Overzicht</a></li>
+                <li><a href="//<?php echo $_SERVER['SERVER_NAME'] ?>/?page=just-released">Net uitgebracht</a></li>
+                <li><a href="//<?php echo $_SERVER['SERVER_NAME'] ?>/?page=favorites">Favorieten</a></li>
+                <li><a href="//<?php echo $_SERVER['SERVER_NAME'] ?>/?page=top10">Top 10</a></li>
             <?php else: ?>
                 <li class="account-login"><a href="//<?php echo $_SERVER['SERVER_NAME'].$views ?>/account/login.php">Aanmelden</a></li>
+                <li class="active"><a href="//<?php echo $_SERVER['SERVER_NAME'] ?>">Overzicht</a></li>
             <?php endif; ?>
-            <li class="active"><a href="//<?php echo $_SERVER['SERVER_NAME'] ?>">Overzicht</a></li>
-            <li><a href="//<?php echo $_SERVER['SERVER_NAME'].$views ?>/members/just-released.php">Net uitgebracht</a></li>
-            <li><a href="//<?php echo $_SERVER['SERVER_NAME'].$views ?>/members/favorites.php">Favorieten</a></li>
-            <li><a href="//<?php echo $_SERVER['SERVER_NAME'].$views ?>/members/staff-picks.php">Staff Picks</a></li>
         </ul>
     </div>
     <div class="main margin15">
